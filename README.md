@@ -1,6 +1,6 @@
-# Image_classification
+# Image classification
 
-### Baselin CNN Architecture
+### Baseline CNN Architecture
 
 For this application I started with this baseline so I could see how it performs:
 
