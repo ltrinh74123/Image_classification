@@ -32,17 +32,15 @@ Unfortunately, we can see below that while the accuracy in the training data is 
 
 ### Managing overfitting
 
-As there wasn't that many training samples, data augmentation was used so that each original training sample would make 2 more augmented training sample through rotating, flipping, changing the brightness and shifting the pixels. Including the augmented data in the model helps with the generalisation as the model accuracy plateaus at a higher accuracy than the un-augmented data, which is desired. However, both the difference between the training and validation data in the accuracy and loss plots still show signs of overfitting, despite the augmented data overfitting less than the un-augmented data. This reduced the model overfitting but more improvements can be made; which is a challenge as I don't have the GPU to run it.
+As there wasn't that many training samples, data augmentation was used so that each original training sample would make 2 more augmented training sample through rotating, flipping, changing the brightness and shifting the pixels. Including the augmented data in the model helps with the generalisation as the model accuracy plateaus at a higher accuracy than the un-augmented data, which is desired. We also see that adding dropouts and L2 regularisation helps with overfitting, enabling the model to be more robust.
+![image](https://github.com/user-attachments/assets/5c90f425-6497-4ae9-9a1e-13572b96b31c)
 
-![image](https://github.com/user-attachments/assets/48148ff8-7d92-4632-94bb-380110572a0e)
 
 ### Results
 After many tests with different hyper-parameter, a model with an accuracy of 82% was acheieved. Here is a sample of the model prediciting some unseen images
 
-
 ![image](https://github.com/user-attachments/assets/e0d956f4-f827-4954-9e53-79218d64cb88)
 
 
-### Final Performance
-We see that adding dropouts and L2 regularisation helps with overfitting, enabling the model to be more robust
-![image](https://github.com/user-attachments/assets/5c90f425-6497-4ae9-9a1e-13572b96b31c)
+
+
