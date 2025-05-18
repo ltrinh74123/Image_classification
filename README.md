@@ -1,4 +1,4 @@
-# Image classification
+![image](https://github.com/user-attachments/assets/6439f465-795e-4bcc-a5dc-228046c61dae)# Image classification
 
 ### Baseline CNN Architecture
 
@@ -24,9 +24,9 @@ For this application I started with this baseline so I could see how it performs
 - Relu Activation function is used in the hidden layers to introduce non-linearity and mitigate the vanishing gradient problem, enabling the network to learn complex relationships.
 - Softmax output Activation function is used in the output layer to convert raw scores into a probability distribution. This ensures the probability outputs sum to 1, making it suitable for multi-class classification.
 
-### Performance
+### Baseline Performance
 
-Unfortunately, we can see below that while the accuracy in the training data is increasing rapidly as the epoch increases whereas the performance on the testing dataset plateaus at around epoch 4, indicating that the model is overfitting. A similiar problem is faced in the loss function as the validation dataset decreases before increasing again
+Unfortunately, we can see below that while the accuracy in the training data is increasing rapidly as the epoch increases whereas the performance on the testing dataset plateaus at around epoch 4, indicating that the model is overfitting. A similiar problem is faced in the loss function as the validation dataset decreases before increasing again.
 
 ![image](https://github.com/user-attachments/assets/b185e10f-5e4d-4b0c-adc9-65641b7ab05b)
 
@@ -37,8 +37,12 @@ As there wasn't that many training samples, data augmentation was used so that e
 ![image](https://github.com/user-attachments/assets/48148ff8-7d92-4632-94bb-380110572a0e)
 
 ### Results
-Here is a sample of the model prediciting some unseen images
-![image](https://github.com/user-attachments/assets/69dca8cd-9ff4-4e9f-b1f4-5848cd5b703e)
+After many tests with different hyper-parameter, a model with an accuracy of 82% was acheieved. Here is a sample of the model prediciting some unseen images
 
 
+![image](https://github.com/user-attachments/assets/e0d956f4-f827-4954-9e53-79218d64cb88)
 
+
+### Final Performance
+We see that adding dropouts and L2 regularisation helps with overfitting, enabling the model to be more robust
+![image](https://github.com/user-attachments/assets/5c90f425-6497-4ae9-9a1e-13572b96b31c)
