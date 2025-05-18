@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/6439f465-795e-4bcc-a5dc-228046c61dae)# Image classification
+# Image classification
 
 ### Baseline CNN Architecture
 
@@ -40,7 +40,6 @@ As there wasn't that many training samples, data augmentation was used so that e
 After many tests with different hyper-parameter, a model with an accuracy of 82% was acheieved. Here is a sample of the model prediciting some unseen images
 
 ![image](https://github.com/user-attachments/assets/e0d956f4-f827-4954-9e53-79218d64cb88)
-
 
 
 
